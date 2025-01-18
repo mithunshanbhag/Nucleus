@@ -1,7 +1,4 @@
-﻿using System.Security.Cryptography;
-using System.Text;
-
-namespace Nucleus.Misc.ExtensionMethods;
+﻿namespace Nucleus.Misc.ExtensionMethods;
 
 public static class ObjectExtensions
 {

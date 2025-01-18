@@ -1,6 +1,4 @@
-﻿using System.Net;
-
-namespace Nucleus.Repositories.Implementations;
+﻿namespace Nucleus.Repositories.Implementations;
 
 public abstract class CosmosGenericRepositoryBase<TEntity> : ICosmosGenericRepository<TEntity> where TEntity : class
 {

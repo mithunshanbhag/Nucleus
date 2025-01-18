@@ -1,4 +1,7 @@
-﻿global using System.Text.Json;
+﻿global using System.Net;
+global using System.Security.Cryptography;
+global using System.Text;
+global using System.Text.Json;
 global using AutoMapper;
 global using Azure.Messaging.ServiceBus;
 global using Azure.Storage.Blobs;
@@ -13,3 +16,4 @@ global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.Azure.Cosmos;
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.Logging;
+global using Spectre.Console;
