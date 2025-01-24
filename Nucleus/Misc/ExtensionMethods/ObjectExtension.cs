@@ -1,6 +1,6 @@
 ﻿namespace Nucleus.Misc.ExtensionMethods;
 
-public static class ObjectExtensions
+public static class ObjectExtension
 {
     public static int GetDeterministicHashCode(this object input)
     {

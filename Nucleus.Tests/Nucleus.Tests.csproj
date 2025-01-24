@@ -30,7 +30,7 @@
 
 	<ItemGroup>
 		<Folder Include="EventStreams\" />
-		<Folder Include="Misc\Utilities\" />
+		<Folder Include="Misc\ExtensionMethods\" />
 	</ItemGroup>
 
 </Project>
