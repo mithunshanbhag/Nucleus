@@ -5,14 +5,15 @@ namespace Nucleus.Tests.Misc.ExtensionMethods;
 
 public class StringExtensionTests
 {
+    private const string Input = "Hello, World!";
+
     [Fact]
     public void AsByteArray_ShouldConvertStringToByteArray()
     {
         // Arrange
-        const string input = "Hello, World!";
-        var expected = Encoding.UTF8.GetBytes(input);
+        var expected = Encoding.UTF8.GetBytes(Input);
         // Act
-        var actual = input.AsByteArray();
+        var actual = Input.AsByteArray();
         // Assert
         Assert.Equal(expected, actual);
     }
@@ -21,10 +22,9 @@ public class StringExtensionTests
     public void AsStream_ShouldConvertStringToStream()
     {
         // Arrange
-        const string input = "Hello, World!";
-        var expected = new MemoryStream(Encoding.UTF8.GetBytes(input));
+        var expected = new MemoryStream(Encoding.UTF8.GetBytes(Input));
         // Act
-        var actual = input.AsStream() as MemoryStream;
+        var actual = Input.AsStream() as MemoryStream;
         // Assert
         Assert.Equal(expected.ToArray(), actual?.ToArray());
     }
@@ -33,10 +33,9 @@ public class StringExtensionTests
     public void AsStream_ShouldConvertStringToStreamAndRead()
     {
         // Arrange
-        const string input = "Hello, World!";
-        var expected = new MemoryStream(Encoding.UTF8.GetBytes(input));
+        var expected = new MemoryStream(Encoding.UTF8.GetBytes(Input));
         // Act
-        var actual = input.AsStream();
+        var actual = Input.AsStream();
         // Assert
         Assert.Equal(expected.ToArray(), actual.AsByteArray());
     }
