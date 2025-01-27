@@ -14,7 +14,9 @@ public class RetryHelper
         {
             MaxRetryAttempts = maxRetryAttempts,
             Delay = TimeSpan.FromMilliseconds(delayInMilliSecs),
-            BackoffType = delayBackoffType
+            BackoffType = delayBackoffType,
+            ShouldHandle = new PredicateBuilder()
+                .Handle<Exception>()
         };
 
         _resiliencePipeline = new ResiliencePipelineBuilder()
