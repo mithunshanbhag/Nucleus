@@ -16,4 +16,6 @@ global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.Azure.Cosmos;
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.Logging;
+global using Polly;
+global using Polly.Retry;
 global using Spectre.Console;

@@ -12,6 +12,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Include="Misc\Utilities\.gitkeep" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="13.0.1" />
 		<PackageReference Include="Azure.Messaging.ServiceBus" Version="7.18.2" />
 		<PackageReference Include="Azure.Storage.Blobs" Version="12.23.0" />
@@ -19,12 +23,12 @@
 		<PackageReference Include="MediatR" Version="12.4.1" />
 		<PackageReference Include="Microsoft.Azure.Cosmos" Version="3.46.1" />
 		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi" Version="1.5.1" />
+		<PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="9.1.0" />
+		<PackageReference Include="Microsoft.Extensions.Resilience" Version="9.1.0" />
 		<PackageReference Include="Spectre.Console" Version="0.49.1" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Misc\Helpers\" />
-		<Folder Include="Misc\Utilities\" />
 		<Folder Include="Repositories\Interfaces\" />
 	</ItemGroup>
 
